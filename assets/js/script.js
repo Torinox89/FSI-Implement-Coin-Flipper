@@ -4,7 +4,28 @@
 
 
     // TODO: Add event listener and handler for flip and clear buttons
+    let flip = document.querySelector("#flip")
+    let image = document.querySelector("img")
+    let displayHeads = document.querySelector("#heads")
+    let displayTails = document.querySelector("#tails")
+    flip.addEventListener("click", funtion() {
+        let val = Math.random();
+        if (val > 0.5)
+        {
+            image.setAttribuite("src", "assets/images/penny-heads.jpg")
+            head = heads +1
+            displayHeads.texContent =heads} 
+            else {
+                image.setAttribuite("src", "assets/images/penny-tails.jpg")
+                head = tails +1
+                displayTails.texContent =tails}
 
+
+            }
+
+
+        }
+    })
     // Flip Button Click Handler
         // TODO: Determine flip outcome
         // TODO: Update image and status message in the DOM
